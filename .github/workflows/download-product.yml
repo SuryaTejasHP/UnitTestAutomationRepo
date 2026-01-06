@@ -23,10 +23,10 @@ jobs:
         run: dotnet tool install --global dotnet-sonarscanner
 
       - name: Restore dependencies
-        run: dotnet restore UnitTestAutomation.sln
+        run: dotnet restore src/UnitTestAutomation/UnitTestAutomation.csproj
 
       - name: Build
-        run: dotnet build UnitTestAutomation.sln --no-restore
+        run: dotnet build src/UnitTestAutomation/UnitTestAutomation.sln --no-restore
 
       - name: Run SonarQube Analysis
         run: |
