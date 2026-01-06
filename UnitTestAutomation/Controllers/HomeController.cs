@@ -20,6 +20,10 @@ namespace UnitTestAutomation.Controllers
         return View();
         }
 
+        public void OnGet() {
+            // Method intentionally left empty.
+        }   
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
